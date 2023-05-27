@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html ⚡>
+<head>
+  <meta charset="utf-8">
+  <title>SourceX</title>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <!-- <script async src="your-javascript-file.js"></script>  Add your JavaScript file here --> 
+  <style amp-custom>
+    /* Custom CSS styles */
+    body {
+        background-color: #fff;
+        font-family: Arial, sans-serif;
+        margin-top: 80px; /* Add margin to body to offset fixed header */
+      }
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff; /* Set your desired background color */
+        padding: 16px 10px;
+        display: flex;
+        height: 20px;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+      }
+      .header-logo {
+        display: flex;
+        align-items: center;
+        padding-left:30px;
+      }
+      .header-logo img {
+        width: 100%;
+        height: 100%;
+        margin-right: 10px;
+      }
+      .header-logo span {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .header-links {
+        display: flex;
+        align-items: center;
+        padding-right:20px;
+      }
+      .header-links a {
+        color: black;
+        text-decoration: none;
+        margin-right: 15px;
+        font-size: 15px;
+      }
+      .signup-button {
+        padding: 8px 10px;
+        background-color: #FF4D00;
+        color: #ffffff !important;
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+      }
+
+      .section {
+        background-color: #fff;
+        padding: 80px 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .section-heading {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 24px;
+        color: #3b3b3b;
+      }
+      .section-description {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        margin-bottom: 48px;
+        color: rgb(18,18,18);
+        max-width: 600px;
+       
+      }
+      .join-button {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #FF4D00;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+      }
+      .sectionImage{
+            filter: drop-shadow(0 4px 48px rgba(0,27,124,.1));
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+        
+      }
+      .outerCover{
+        width:60%;
+      }
+      .outerCoverMobile{
+        width: 15%;
+        position: absolute;
+        right: 200px;
+        bottom: -26px
+      }
+      .banner-shortDesp{
+        margin-top: 150px;
+        font-size: .75rem;
+        line-height: 1rem;
+        font-weight: 700;
+        color: rgb(161 165 164);
+        transform: translateX(0px) translateY(25px) scale(1) translateZ(0px);
+        text-align: center;
+    }
+    .flex-col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(0px) translateY(30px) scale(1) translateZ(0px);
+    }
+   
+    .inner-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    }
+
+    .margin-r{
+        margin-left: calc(1.75rem * calc(1 - 0));
+    }
+  </style>
+  <link rel="canonical" href="self.html">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+          <img src="https://scoutapp-cdn.s3.us-east-1.amazonaws.com/landing_page/header-logo.svg" alt="Logo"> <!-- Replace with your logo image -->
+          
+        </div>
+        <div class="header-links">
+          <a href="#">Twitter</a>
+          <a href="#">Jobs</a>
+          <a href="#">Help</a>
+          <a href="#">Log in</a>
+          <a class="signup-button" href="#">Sign up</a>
+        </div>
+      </header>
+
+      <section class="section">
+        <h2 class="section-heading">Where power sellers move at the speed of light</h2>
+        <p class="section-description">Cross-list across marketplaces, get real-time market insights, and track your inventory from one simple platform</p>
+        <a class="join-button" href="#">Join Scout for free</a>
+      </section>
+
+      <section class="sectionImage">
+        <div class="outerCover">
+        <amp-img
+        src="https://scoutapp-cdn.s3.us-east-1.amazonaws.com/landing_page/front_clean.jpg"
+        width="1100"
+        height="600"
+        layout="responsive"
+        alt="banner"
+      ></amp-img>
+    </div>
+    <div class="outerCoverMobile">
+        <amp-img
+        src="https://scoutapp-cdn.s3.us-east-1.amazonaws.com/landing_page/iphone_hero.png"
+        width="200"
+        height="400"
+        layout="responsive"
+        alt="banner"
+      ></amp-img>
+    </div>
+      </section>
+      <p class="banner-shortDesp">POWERING THOUSANDS OF SELLERS ON</p>
+      <div class="brands-cover">
+        <div class="inner-cover">
+            <amp-img 
+            class="margin-r"
+            src="https://app.scoutapp.ai/_next/image?url=https%3A%2F%2Fscoutapp-cdn.s3.us-east-1.amazonaws.com%2Flanding_page%2Ffb_grey.png&w=48&q=75"
+            width="36"
+            height="36"
+            alt="banner"
+          ></amp-img>
+          <amp-img
+          class="margin-r"
+          src="https://app.scoutapp.ai/_next/image?url=https%3A%2F%2Fscoutapp-cdn.s3.us-east-1.amazonaws.com%2Flanding_page%2Fig_grey.png&w=48&q=75"
+          width="36"
+          height="36"
+          alt="banner"
+        ></amp-img>
+        <amp-img
+        class="margin-r"
+        src="https://app.scoutapp.ai/_next/image?url=https%3A%2F%2Fscoutapp-cdn.s3.us-east-1.amazonaws.com%2Flanding_page%2Fstockx_grey.png&w=128&q=75"
+        width="90"
+        height="25"
+        alt="banner"
+      ></amp-img>
+      <amp-img
+      class="margin-r"
+      src="https://app.scoutapp.ai/_next/image?url=https%3A%2F%2Fscoutapp-cdn.s3.us-east-1.amazonaws.com%2Flanding_page%2Febay_grey.png&w=96&q=75"
+      width="55"
+      height="33"
+      alt="banner"
+    ></amp-img>
+    <amp-img
+    class="margin-r"
+    src="https://app.scoutapp.ai/_next/image?url=https%3A%2F%2Fscoutapp-cdn.s3.us-east-1.amazonaws.com%2Flanding_page%2Fflightclub_grey.png&w=128&q=75"
+    width="120"
+    height="30"
+    alt="banner"
+  ></amp-img>
+  <amp-img
+  class="margin-r"
+  src="https://app.scoutapp.ai/_next/image?url=https%3A%2F%2Fscoutapp-cdn.s3.us-east-1.amazonaws.com%2Flanding_page%2Fsg_grey.png&w=96&q=75"
+  width="100"
+  height="30"
+  alt="banner"
+></amp-img>
+<amp-img
+class="margin-r"
+src="https://scoutapp-cdn.s3.us-east-1.amazonaws.com/landing_page/whatnot.svg"
+width="120"
+height="30"
+alt="banner"
+></amp-img>
+        </div>
+      </div>
+</body>
+</html>
