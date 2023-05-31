@@ -434,7 +434,7 @@
          
           .footer {
             font-size: 16px;
-            background: #FF4D00;
+            background: black;
             padding: 2em 4em;
             display: flex;
             align-items: start;
@@ -471,12 +471,204 @@
           .col-list a:focus {
             text-decoration: underline;
           }
+
+          .listSection{
+            flex-direction: column; 
+            align-items: center; 
+            padding: 200px 0px
+          }
           
+          .col-title {
+            color: white;
+            font-size: 1.4em;
+            font-weight: 700;
+            padding: 0.1em 0;
+        }
+
+        .col-list a {
+         color: white;
+         text-decoration: none;
+         line-height: 1.4;
+         font-weight: 500;
+         font-size: 1rem;
+         line-height: 1.5rem;
+     }
           @media screen and (max-width: 750px) {
             .footer {
               padding: 2em;
               flex-direction: column;
             }
+          }
+
+          @media screen and (max-width: 500px)
+          {
+            .mobileHide{
+               display: none;
+            }
+
+            .header-links {
+               padding-right: 7px;
+            }
+            .header-logo {
+               padding-left: 7px;
+            }
+
+            .section{
+               padding: 80px 20px;
+            }
+
+            .section-heading {
+               font-size: 1.5rem;
+               line-height: 2rem;
+              
+           }
+           .section-description {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            font-weight: 500;
+        }
+
+        .join-button {
+         padding: 9px 6px;
+         font-size: 12px;
+     }
+
+     .outerCover {
+      width: 80%;
+  }
+
+  .outerCoverMobile {
+   width: 35%;
+   position: absolute;
+   right: 20px;
+   bottom: -48px;
+}
+
+.inner-cover {
+   margin: 35px 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 85%;
+   flex-wrap: wrap;
+   height: 26vh;
+}
+.section-blue {
+   padding: 45px 25px;
+}
+.flex-r {
+   flex-direction: column;
+   padding: 0px 30px;
+}
+.section-tracking {
+   flex-direction: column;
+   padding: 100px 20px;
+}
+
+.tracking-text {
+   margin-left: calc(18px * calc(1 - 0));
+   padding: 0px 5px;
+}
+
+.tracking-div {
+   width: 90%;
+   position: relative;
+   margin-bottom: 35px;
+}
+
+.solid{
+   display: none;
+}
+
+.grey{
+   flex-direction: column-reverse;
+}
+.inner-div {
+   padding: 0px 10px;
+   padding-right: 0px;
+}
+
+.inner {
+   width: 100%;
+}
+
+.section-tracking2 {
+
+   flex-direction: column;
+   padding: 60px 20px
+   
+}
+
+.section-tracking2 .tracking-div {
+   width: 90%;
+   margin-bottom: 35px;
+   margin-top: 35px;
+   display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.tracking-img2 {
+   height: 250px;
+}
+
+.image-bg {
+   top: 25px;
+   right: 25px;
+}
+
+.testimonial-section {
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+
+.testimonial-section .statistic-value {
+   font-size: 1.875rem;
+   line-height: 2.5rem;
+}
+.flex-r {
+   flex-direction: row;
+   padding: 0px 10px;
+}
+.r2 {
+    margin-left: 0px;
+}
+
+.listSection{
+   flex-direction: column; 
+   align-items: center; 
+   padding: 100px 0px
+ }
+
+ .listSection .outerCover {
+   width: 90%;
+ }
+
+ .sectionImage .list {
+    grid-template-columns: none; 
+   grid-template-rows: repeat(2,minmax(0,1fr));
+   gap: 3rem;
+}
+
+.section-end {
+   padding: 70px 20px;
+}
+
+.toCenter{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 25px;
+}
+
+.line2 {
+   background-color: white;
+   width: 100%;
+   height: 1px;
+   margin: 0.75rem 0rem;
+   margin-top: -15px;
+}
           }
           
       </style>
@@ -490,10 +682,10 @@
             <h1>SourceX</h1>
          </div>
          <div class="header-links">
-            <a href="#">Twitter</a>
-            <a href="#">Jobs</a>
-            <a href="#">Help</a>
-            <a href="#">Log in</a>
+            <a class="mobileHide" href="#">Twitter</a>
+            <a class="mobileHide" href="#">Jobs</a>
+            <a class="mobileHide" href="#">Help</a>
+            <a  href="#">Log in</a>
             <a class="signup-button" href="#">Sign up</a>
          </div>
       </header>
@@ -511,6 +703,9 @@
                layout="responsive"
                alt="banner"
                ></amp-img>
+            
+
+               
          </div>
          <div class="outerCoverMobile">
             <amp-img
@@ -518,6 +713,16 @@
                width="200"
                height="400"
                layout="responsive"
+               media="(min-width: 601px)"
+               alt="banner"
+               ></amp-img>
+
+               <amp-img
+               src="https://scoutapp-cdn.s3.us-east-1.amazonaws.com/landing_page/iphone_hero.png"
+               width="400"
+               height="800"
+               layout="responsive"
+               media="(max-width: 600px)"
                alt="banner"
                ></amp-img>
          </div>
@@ -646,24 +851,7 @@
             <div class="image-bg" ></div>
          </div>
       </section>
-      <section class="testimonial-section">
-         <div class="testimonial-content">
-            <div class="testimonial-text">
-               <p class=" white statistic-value">"Hours of weekly manual work listing items became seconds. I can't believe how much time I wasted. The time I've saved after switching to SourceX has been incredible."</p>
-               <div class="flex-r r2">
-                  <amp-img
-                     class="tracking-img circle"
-                     src="https://scoutapp-cdn.s3.us-east-1.amazonaws.com/landing_page/swiftcop.jpg"
-                     width="50"
-                     height="50"
-                     alt="banner"
-                     ></amp-img>
-                  <p class="text-lg">SwiftCop, professional reseller</p>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section style="flex-direction: column; align-items: center; padding: 200px 0px" class="sectionImage">
+      <section  class="sectionImage listSection">
          <div style="margin-bottom:120px;" class="outerCover">
             <amp-img
                src="https://scoutapp-cdn.s3.us-east-1.amazonaws.com/landing_page/dashboard_clean_two.jpg"
@@ -827,14 +1015,34 @@
          <a class="join-button" href="#">Sign up now</a>
       </section>
 
+      <section class="testimonial-section">
+         <div class="testimonial-content">
+            <div class="testimonial-text">
+               <p class=" white statistic-value">"Hours of weekly manual work listing items became seconds. I can't believe how much time I wasted. The time I've saved after switching to SourceX has been incredible."</p>
+               <div class="flex-r r2">
+                  <amp-img
+                     class="tracking-img circle"
+                     src="https://scoutapp-cdn.s3.us-east-1.amazonaws.com/landing_page/swiftcop.jpg"
+                     width="50"
+                     height="50"
+                     alt="banner"
+                     ></amp-img>
+                  <p class="text-lg">SwiftCop, professional reseller</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
       <section class="footer" id="footer">
 
 
-         <span class="col">
+         <span class="col toCenter">
             <h1>
                Source X
             </h1>
+            
           </span>
+          <div class="line2"></div>
 
          <span class="col">
            <h3 class="col-title">Help</h3>
